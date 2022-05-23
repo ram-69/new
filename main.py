@@ -22,13 +22,13 @@ class MainHandler(webapp.RequestHandler):
         self.response.out.write(even)
         self.response.out.write(odd)
         ##################
-        abc="anmol"
-        nikhil=""
+        abc="string"
+        copy=""
 
         for i in range(len(abc)):
-            nikhil=nikhil+abc[i]
+            copy=copy+abc[i]
 
-        print nikhil
+        print copy
 
 def main():
     application = webapp.WSGIApplication([('/', MainHandler)],
