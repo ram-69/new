@@ -21,7 +21,14 @@ class MainHandler(webapp.RequestHandler):
 
         self.response.out.write(even)
         self.response.out.write(odd)
+        ##################
+        abc="anmol"
+        nikhil=""
 
+        for i in range(len(abc)):
+            nikhil=nikhil+abc[i]
+
+        print nikhil
 
 def main():
     application = webapp.WSGIApplication([('/', MainHandler)],
