@@ -25,8 +25,9 @@ def isSafe(board,r,c,N):
 
     return True
 
-N = 8
-
+#N = 8
+print("Enter size of Matrix-\n")
+N=int(input())
 def printSolution(board):
 	for i in range(N):
 		for j in range(N):
